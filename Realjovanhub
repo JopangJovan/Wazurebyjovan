@@ -1,0 +1,31 @@
+local PabloLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/BatuKvi123/PabloLibV3/main/PabloLibV3"))()
+local window = PabloLib:Create("Tutorial")
+
+---Tabs---
+
+local tab1 = window:CreateTab("Jopan")
+local tab2 = window:CreateTab("Script jopan")
+
+---buttons---
+
+tab1:CreateButton("Jovan hub", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/JopangJovan/Wazurebyjovan/main/Wazure'))()
+end)
+
+tab1:CreateTextbox("Speedhax", function(a)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = a
+print(a)
+end)
+
+tab1:CreateTextbox("Jumphax", function(a)
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = a
+print(a)
+end)
+
+tab2:CreateButton("Jovan hub (cuma test )", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/JopangJovan/Wazurebyjovan/main/Wazure'))()
+end)
+
+---WARING---
+
+tab1:CreateWarning("Warning")
